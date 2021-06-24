@@ -1,0 +1,776 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.mt-7 {
+  margin-top: 56px;
+}
+
+.pt-7 {
+  padding-top: 56px;
+}
+
+.pb-7 {
+  padding-bottom: 56px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header img {
+  display: block;
+}
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header ul li i {
+  margin-right: 3px;
+}
+.header ul li a {
+  display: block;
+  color: #8D8D8D;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+  text-decoration: none;
+  padding: 16px;
+}
+.header .menu ul li a:hover {
+  color: #e0c28b;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.header .menu ul li a:active {
+  opacity: 80%;
+}
+.header .mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header .menu {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: block;
+  }
+  .header .mobile-cart {
+    position: relative;
+  }
+  .header li a {
+    color: #8D8D8D;
+    font-size: 20px;
+    font-family: "Noto Sans TC";
+    padding: 16px;
+    text-decoration: none;
+  }
+  .header li span {
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    background: red;
+    padding: 0px 4px 2px 4px;
+    font-size: 14px;
+    position: absolute;
+    right: 19%;
+    top: 15%;
+  }
+}
+
+.banner {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg);
+  background-size: cover;
+  height: 870px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.banner .banner-content {
+  margin-right: 10%;
+  width: 445px;
+}
+@media (max-width: 768px) {
+  .banner .banner-content {
+    margin: 0 auto;
+    width: 345px;
+  }
+}
+.banner .banner-content h2 {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-family: "Noto Sans TC";
+  padding-top: 295px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.banner .banner-content p {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Noto Sans TC";
+  line-height: 36px;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .banner .banner-content p {
+    text-align: justify;
+  }
+}
+.banner .banner-content a {
+  max-width: 350px;
+  display: block;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Noto Sans TC";
+  border: 2px solid #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 15px;
+  text-align: center;
+}
+.banner .banner-content span a:hover {
+  background: rgba(192, 192, 192, 0.2);
+}
+.banner .banner-content span a:active {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.top-product li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-product .top-product-img {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .top-product .top-product-img {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+}
+.top-product .top-product-content {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 6%;
+  margin-left: 6%;
+}
+@media (max-width: 768px) {
+  .top-product .top-product-content {
+    max-width: 568px;
+    margin: 0 auto;
+  }
+}
+.top-product .top-product-content h2 {
+  font-weight: bold;
+}
+.top-product .top-product-content a {
+  text-decoration: none;
+  color: #AC8A46;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+}
+.top-product .top-product-content a:hover {
+  opacity: 60%;
+}
+@media (max-width: 768px) {
+  .top-product .top-product-content a {
+    margin-bottom: 16px;
+  }
+}
+.top-product .top-product-content p {
+  line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  color: black;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+  font-weight: 300;
+}
+.top-product .top-content-bottom h2 {
+  font-size: 24px;
+}
+.top-product .top-content-bottom p {
+  font-size: 16px;
+}
+.top-product .top-content-bottom a {
+  display: block;
+  color: black;
+  border: black solid 2px;
+  padding: 18px;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .top-product .top-product-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.top-product .top-product-rowReverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  .top-product .top-product-rowReverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.top-product h2 {
+  color: #000;
+  font-size: 32px;
+  font-family: "Noto Sans TC";
+  line-height: 48px;
+}
+
+.mid-product {
+  background: #E0E0E0;
+}
+.mid-product ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .mid-product ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .mid-product li {
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+}
+.mid-product .mid-product-img-1 {
+  width: 350px;
+  height: 540px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index6.jpg);
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .mid-product .mid-product-img-1 {
+    width: 344px;
+    height: 350px;
+    background-position-y: 100%;
+  }
+}
+.mid-product .mid-product-img-2 {
+  width: 350px;
+  height: 540px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index7.jpg);
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .mid-product .mid-product-img-2 {
+    width: 344px;
+    height: 350px;
+    background-position: center;
+  }
+}
+.mid-product .mid-product-img-3 {
+  width: 350px;
+  height: 540px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index8.jpg);
+  background-size: cover;
+  opacity: 70%;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .mid-product .mid-product-img-3 {
+    width: 344px;
+    height: 350px;
+  }
+}
+.mid-product .sold-out-bg {
+  width: 350px;
+  height: 540px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .mid-product .sold-out-bg {
+    width: 344px;
+    height: 350px;
+  }
+}
+.mid-product .sold-out-text {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+}
+.mid-product .mid-product-content h2 {
+  color: black;
+  font-size: 24px;
+  font-family: "Noto Sans TC";
+  line-height: 36px;
+  font-weight: bold;
+}
+.mid-product .mid-product-content h3 {
+  color: black;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+}
+.mid-product .mid-product-content p {
+  color: black;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+  margin-top: 16px;
+}
+@media (max-width: 768px) {
+  .mid-product .mid-product-content p {
+    margin-top: 4px;
+  }
+}
+.mid-product .mid-product-content em {
+  color: #8D8D8D;
+  text-decoration: line-through;
+  padding-left: 8px;
+}
+
+.bot-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .bot-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.bot-product .bot-product-img img {
+  max-width: 730px;
+  height: 520px;
+}
+@media (max-width: 768px) {
+  .bot-product .bot-product-img img {
+    max-width: 345px;
+    height: 520px;
+  }
+}
+.bot-product .bot-product-content {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bot-product .bot-product-content h2 {
+  color: black;
+  font-size: 32px;
+  font-family: "Noto Sans TC";
+  line-height: 48px;
+}
+.bot-product .bot-product-content h3 {
+  color: black;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+  line-height: 30px;
+  padding-bottom: 16px;
+}
+.bot-product .bot-product-content p {
+  color: black;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+.bot-product .bot-product-content a {
+  text-decoration: none;
+  color: #AC8A46;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+}
+
+.subscript-content {
+  padding-top: 18%;
+}
+@media (max-width: 768px) {
+  .subscript-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50% 0 30% 0;
+  }
+}
+.subscript-content input {
+  color: #8D8D8D;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 24px;
+  padding: 16px 12px 16px 12px;
+  border: 2px solid #916000;
+  border-radius: 4px 0px 0px 4px;
+}
+.subscript-content .btn-sendMail {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  text-align: center;
+  border: 2px solid #916000;
+  border-radius: 0px 4px 4px 0px;
+  height: 60px;
+  background-color: #916000;
+  width: 131px;
+  cursor: pointer;
+  margin-left: -5px;
+}
+.subscript-content .btn-sendMail:active {
+  opacity: 90%;
+}
+.subscript-content a {
+  padding: 20px;
+  text-decoration: none;
+  margin-left: -5px;
+}
+.subscript-content h2 {
+  color: #8D8D8D;
+  font-size: 32px;
+  font-family: "Noto Sans TC";
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.subscript-bg {
+  height: 600px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index10.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+@media (max-width: 768px) {
+  .subscript-bg {
+    background-position: left;
+  }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #916000;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+}
+.footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-left img {
+  display: block;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .footer .footer-right {
+    display: none;
+  }
+}
+.footer .footer-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer-right a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+  padding: 20px;
+}
+
+.brand-menu {
+  background: #916000;
+}
+.brand-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+  line-height: 30px;
+}
+.brand-menu ul li {
+  position: relative;
+}
+.brand-menu ul a {
+  display: block;
+  padding: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: "Noto Sans TC";
+}
+.brand-menu ul a:hover {
+  opacity: 85%;
+}
+@media (max-width: 768px) {
+  .brand-menu {
+    display: none;
+  }
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .login {
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+  }
+}
+.login h2 {
+  color: black;
+  font-size: 32px;
+  font-family: "Noto Sans TC";
+  line-height: 48px;
+  padding-bottom: 12px;
+}
+@media (max-width: 768px) {
+  .login h2 {
+    padding-top: 24px;
+  }
+}
+.login h3 {
+  color: #212529;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  line-height: 22px;
+  padding-bottom: 4px;
+}
+.login img {
+  max-width: 730px;
+  height: 730px;
+}
+@media (max-width: 768px) {
+  .login img {
+    width: 345px;
+    height: 220px;
+  }
+}
+.login input {
+  border: 1px solid #CED4DA;
+  border-radius: 3px;
+  padding: 10px 120px 10px 10px;
+}
+.login .login-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.login .login-bot a {
+  border-radius: 3px;
+  text-decoration: none;
+}
+.login .login-bot span {
+  color: #916000;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+}
+.login .login-bot .login-bot-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.login .login-bot .a-signin {
+  border: 1px solid #916000;
+  color: #916000;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  margin-right: 8px;
+  padding: 10px;
+}
+.login .login-bot .a-login {
+  border: 1px solid #916000;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Noto Sans TC";
+  background: #916000;
+  padding: 10px;
+}

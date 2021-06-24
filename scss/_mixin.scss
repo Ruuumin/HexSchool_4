@@ -1,0 +1,10 @@
+@mixin font($color,$size){
+    color: $color;
+    font-size: $size;
+    font-family: 'Noto Sans TC';
+}
+@mixin pad{
+    @media(max-width:768px){
+      @content
+    }
+}

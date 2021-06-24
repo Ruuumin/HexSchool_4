@@ -1,0 +1,96 @@
+.brand-menu{
+    background: #916000;
+    ul{
+        display: flex;
+        align-items: center;
+        @include font(#FFFFFF,20px);
+        line-height: 30px;
+        li{
+            position: relative;
+        }
+        a{
+            display: block;
+            padding: 14px;
+            text-decoration: none;
+            @include font(#FFFFFF,20px);
+                &:hover{
+                    opacity: 85%;
+                }
+        }
+    }
+
+    @include pad{
+        display: none;
+    }
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include pad{
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    h2{
+        @include font(black,32px);
+        line-height: 48px;
+        padding-bottom: 12px;
+
+        @include pad{
+            padding-top: 24px;
+        }
+    }
+    h3{
+        @include font(#212529,16px);
+        line-height: 22px;
+        padding-bottom: 4px;
+    }
+    img{
+        max-width: 730px;
+        height: 730px;
+        @include pad{
+            width: 345px;
+            height: 220px;
+        }
+    }
+    input{
+        border: 1px solid #CED4DA;
+        border-radius: 3px;
+        padding: 10px 120px 10px 10px;
+    }
+    .login-bot{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 36px;
+        align-items: center;
+        a{
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        span{
+            @include font(#916000, 16px);
+        }
+        .login-bot-right{
+            display: flex;
+            justify-content: end;
+        }
+        .a-signin{
+            border: 1px solid #916000;
+            @include font(#916000, 16px);
+            margin-right: 8px;
+            padding: 10px;
+        }
+        .a-login{
+            border: 1px solid #916000;
+            @include font(#fff, 16px);
+            background: #916000;
+            padding: 10px;
+        }
+    }
+}
